@@ -140,7 +140,7 @@ public class ContentActivity extends AppCompatActivity implements View.OnClickLi
             }
         });
     }
-@Subscribe(thread = EventThread.MAIN_THREAD,tags = {@Tag("aaaa")})
+@Subscribe(thread = EventThread.MAIN_THREAD,tags = {@Tag()})
     public void onEvent(MainActivity.EventTypeTest eventType) {
         if (eventType!=null){
             String string = eventType.getString();
